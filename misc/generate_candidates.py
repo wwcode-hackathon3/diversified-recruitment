@@ -38,13 +38,13 @@ keywords = ["Access platform", "Ad creative/impression/inventory/rotation",
             "Web based technology", "Yield mana"]
 
 candidates = []
-name_list = random.sample(names, 20)
-for i in range(20):
+name_list = random.sample(names, 50)
+for i in range(50):
     name = name_list[i]
     skills = random.sample(keywords, 10)
     candidates.append({
         "name": "Anonymous " +name.capitalize(),
-        "skills": [{"text": s, "value": random.randint(10, 1000)} for s in skills]
+        "skills": [{"text": s, "value": random.randint(10, 500)} for s in skills]
     })
 
 print(candidates);
