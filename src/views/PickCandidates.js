@@ -38,7 +38,7 @@ class AddJobDescription extends React.Component {
 
   moveToNext() {
     console.log(this.state.index);
-    this.setState({index: ++this.state.index});
+    this.setState({index: this.state.index+1});
   }
   dislike() {
     this.moveToNext();
@@ -47,27 +47,30 @@ class AddJobDescription extends React.Component {
     this.moveToNext();
   }
 
+
   render() {
+    let word_cloud;
+    let like_button;
+    let dislike_button;
+    if (this.state.index < resumes.length) {
+      word_cloud = <WordCloud data={resumes[this.state.index]} fontSizeMapper={fontSizeMapper} />;
+      like_button = <button onClick={this.like}> I like you </button>
+      dislike_button =  <button onClick={this.dislike}> I no lik u </button>
+    } else {
+      word_cloud = <p>"The End"</p>;
+      like_button = <br />;
+      dislike_button = <br />;
+ }
+
     return <div>
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 className="h2">Pick candidates</h1>
+        {word_cloud}
+        {like_button}
+        {dislike_button}
       </div>
-    {this.state.index < resumes.length ?
-      <WordCloud
-        data={resumes[this.state.index]}
-        fontSizeMapper={fontSizeMapper}
-        // rotate={rotate}
-      /> : <p> The End </p>}
-      <button onClick={this.dislike}>
-        I dislike you
-      </button>
-      <button onClick={this.like}>
-        I like you
-      </button>
-    </div>
-  }
-
-
+     </div>
+    }
 }
 
 export default AddJobDescription;
