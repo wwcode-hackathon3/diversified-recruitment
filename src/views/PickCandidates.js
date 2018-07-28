@@ -39,11 +39,12 @@ class AddJobDescription extends React.Component {
         // console.log(JsonData.highlight[0]);
         // console.log(JsonData.highlight);
         for (let i = 0; i <10; i++) {
+          console.log(i);
           let candidate = JsonData.highlight[i];
           for (let j = 0; j < candidate.length; j++) {
             let attribute = candidate[j];
             if (attribute.category === "Skills") {
-              // console.log(attribute);
+              console.log(attribute);
             }
           }
       }
