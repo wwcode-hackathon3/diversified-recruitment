@@ -30,11 +30,6 @@ class App extends Component {
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink to="/add-job-description" className="nav-link" activeClassName="active">
-                        Add job description
-                      </NavLink>
-                    </li>
-                    <li className="nav-item">
                       <NavLink to="/pick-candidates" className="nav-link">
                         Pick candidates
                       </NavLink>

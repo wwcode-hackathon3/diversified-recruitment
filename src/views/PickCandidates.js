@@ -7,7 +7,7 @@ const human_1 = [
   { text: 'Banana', value: 200 },
   { text: 'Tomato', value: 800 },
   { text: 'Cat', value: 1000000 },
-  { text: 'Very Intersting', value: 10 },
+  { text: 'Very Interesting', value: 10 },
 ];
 
 
@@ -69,10 +69,10 @@ class AddJobDescription extends React.Component {
     let dislike_button;
     if (this.state.index < resumes.length) {
       word_cloud = <WordCloud data={resumes[this.state.index]} fontSizeMapper={fontSizeMapper} />;
-      like_button = <button onClick={this.like}> I like you </button>
-      dislike_button =  <button onClick={this.dislike}> I no lik u </button>
+      like_button = <button onClick={this.like} className="btn btn-success">I like you</button>;
+      dislike_button = <button onClick={this.dislike} className="btn btn-danger"> I no lik u </button>
     } else {
-      word_cloud = <p>"The End"</p>;
+      word_cloud = <p>The End</p>;
       like_button = <br />;
       dislike_button = <br />;
  }
@@ -80,7 +80,9 @@ class AddJobDescription extends React.Component {
     return <div>
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 className="h2">Pick candidates</h1>
-        {word_cloud}
+      </div>
+      {word_cloud}
+      <div className="text-center">
         {like_button}
         {dislike_button}
       </div>
