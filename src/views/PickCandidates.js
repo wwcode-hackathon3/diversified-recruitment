@@ -1,6 +1,6 @@
 import React from "react";
 import WordCloud from 'react-d3-cloud';
-
+import JsonData from '../output.json';
 
 const human_1 = [
   { text: 'Apple', value: 1000 },
@@ -34,6 +34,12 @@ class AddJobDescription extends React.Component {
     this.dislike = this.dislike.bind(this);
     this.like = this.like.bind(this);
     this.moveToNext = this.moveToNext.bind(this);
+    console.log(JsonData);
+    console.log(JsonData.highlight);
+    for(var i = 0; i <1; i++) {
+      var obj = JsonData[i];
+      console.log(obj);
+    }
   }
 
   moveToNext() {
