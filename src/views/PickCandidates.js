@@ -7,7 +7,7 @@ import JSONData from '../candidates.json';
 const fontSizeMapper = word => Math.log2(word.value) * 5;
 
 
-class AddJobDescription extends React.Component {
+class PickCandidates extends React.Component {
   constructor(props) {
     super(props);
     this.state = {candidates: []};
@@ -66,9 +66,9 @@ class AddJobDescription extends React.Component {
 
     return <div>
       <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Senior Java Developer</li>
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item"><a href="/">Home</a></li>
+          <li className="breadcrumb-item active" aria-current="page">Senior Java Developer</li>
         </ol>
       </nav>
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
@@ -84,4 +84,4 @@ class AddJobDescription extends React.Component {
     }
 }
 
-export default AddJobDescription;
+export default PickCandidates;
