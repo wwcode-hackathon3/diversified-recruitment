@@ -15,7 +15,7 @@ class AddJobDescription extends React.Component {
     this.dislike = this.dislike.bind(this);
     this.like = this.like.bind(this);
     this.moveToNext = this.moveToNext.bind(this);
-    const cachedHits = localStorage.getItem("n");
+    const cachedHits = localStorage.getItem("not_processed");
     if (cachedHits) {
       this.state.candidates = JSON.parse(cachedHits);
       // this.setState({ hits: JSON.parse(cachedHits) });

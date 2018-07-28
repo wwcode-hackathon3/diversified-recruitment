@@ -10,7 +10,14 @@ export default class AddJobDescription extends React.Component {
         super();
         this.state = { checked: false };
         this.handleChange = this.handleChange.bind(this);
-        this.tomato
+      const cachedHits = localStorage.getItem("accept");
+      if (cachedHits) {
+        this.state.accepted_candidates = JSON.parse(cachedHits);
+        console.log(this.state.accepted_candidates);
+        // this.setState({ hits: JSON.parse(cachedHits) });
+      } else {
+        this.state.accepted_candidates = [];
+      }
     }
 
     handleChange(checked) {
