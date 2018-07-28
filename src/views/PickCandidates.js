@@ -15,12 +15,12 @@ const fontSizeMapper = word => Math.log2(word.value) * 5;
 export default class AddJobDescription extends React.Component {
   render() {
     return <div>
-      <h1>Pick candidates</h1>
+      <h1 className="h2">Pick candidates</h1>
       <WordCloud
         data={data}
         fontSizeMapper={fontSizeMapper}
         // rotate={rotate}
-      />,
+      />
     </div>
   }
 }
