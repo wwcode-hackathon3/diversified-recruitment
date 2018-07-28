@@ -24,7 +24,7 @@ export default class Home extends React.Component {
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">Junior ReactJS Developer</h5>
             <div>
-              <span className="badge badge-primary badge-pill">5</span>
+              <span className="badge badge-primary badge-pill">50</span>
             </div>
           </div>
           <small className="text-muted">Last applicant applied 3 days ago</small>
