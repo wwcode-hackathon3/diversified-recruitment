@@ -20,7 +20,7 @@ class App extends Component {
             </ul>
           </nav>
           <div className="container-fluid">
-             <main role="main" className="ml-sm-auto col-lg-10 px-4">
+             <main role="main" className="ml-sm-auto px-4">
               <Route exact path="/" render={() => (
                 // loggedIn ? (
                   <Redirect to="/home"/>

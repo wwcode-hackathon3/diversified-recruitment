@@ -1,6 +1,6 @@
 import React from "react";
 import WordCloud from 'react-d3-cloud';
-
+import JsonData from '../output.json';
 
 const human_1 = [
   { text: 'Apple', value: 1000 },
@@ -34,6 +34,22 @@ class AddJobDescription extends React.Component {
     this.dislike = this.dislike.bind(this);
     this.like = this.like.bind(this);
     this.moveToNext = this.moveToNext.bind(this);
+    this.processJson = function() {
+        //
+        // console.log(JsonData.highlight[0]);
+        // console.log(JsonData.highlight);
+        for (let i = 0; i <10; i++) {
+          console.log(i);
+          let candidate = JsonData.highlight[i];
+          for (let j = 0; j < candidate.length; j++) {
+            let attribute = candidate[j];
+            if (attribute.category === "Skills") {
+              console.log(attribute);
+            }
+          }
+      }
+    }
+    this.processJson();
   }
 
   moveToNext() {
