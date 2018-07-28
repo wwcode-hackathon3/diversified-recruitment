@@ -4,8 +4,11 @@ import {Link} from "react-router-dom";
 const username = 'Boss';
 
 export default class Home extends React.Component {
+  goToPickCandidate() {
+    this.props.history.push("/pick-candidates")
+  }
   render() {
-    return <div>
+    return <div className="home">
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 className="h2">Welcome, {username}</h1>
       </div>
@@ -17,15 +20,18 @@ export default class Home extends React.Component {
         </Link>
       </p>
       <div className="list-group">
-        <a href="/pick-candidates" className="list-group-item list-group-item-action flex-column align-items-start">
+        <div className="list-group-item list-group-item-action flex-column align-items-start" onClick={() => this.goToPickCandidate()}>
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">Senior Java Developer</h5>
             <div>
               <span className="badge badge-primary badge-pill">14</span>
             </div>
           </div>
-          <small className="text-muted">Last candidate applied 5 hours ago</small>
-        </a>
+          <div>
+            <small className="text-muted">Last candidate applied 5 hours ago</small>
+            <a className="btn btn-info right-align" href="/review-candidates" role="button">Review Selected Candidates</a>
+          </div>
+        </div>
         <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">Junior ReactJS Developer</h5>
@@ -34,6 +40,7 @@ export default class Home extends React.Component {
             </div>
           </div>
           <small className="text-muted">Last candidate applied 3 days ago</small>
+          <a className="btn btn-info right-align" href="/review-candidates" role="button">Review Selected Candidates</a>
         </a>
       </div>
     </div>
