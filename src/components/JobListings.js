@@ -20,7 +20,7 @@ class JobListings extends React.Component {
         </div>
         {/*Random hours ago as placeholder*/}
         <small className="text-muted">Last candidate applied {Math.floor((Math.random() * 10) + 1)} hours ago</small>
-        <Link className="btn btn-info right-align" to="/review-candidates" role="button">Review Selected Candidates</Link>
+        <Link className="btn btn-info right-align" to="/review-candidates" role="button" onClick={(event) => event.stopPropagation()}>Review Selected Candidates</Link>
       </div>
     );
   }
