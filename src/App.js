@@ -49,20 +49,18 @@ class App extends Component {
               </nav>
 
               <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-4">
-                <div
-                  className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                  <Route exact path="/" render={() => (
-                    // loggedIn ? (
-                      <Redirect to="/home"/>
-                    // ) : (
-                    //   <Redirect to="/login"/>
-                    // )
-                  )}/>
-                  <Route path="/home" component={Home} />
-                  <Route path="/add-job-description" component={AddJobDescription} />
-                  <Route path="/pick-candidates" component={PickCandidates} />
-                  <Route path="/review-candidates" component={ReviewCandidates} />
-                </div>
+
+                <Route exact path="/" render={() => (
+                  // loggedIn ? (
+                    <Redirect to="/home"/>
+                  // ) : (
+                  //   <Redirect to="/login"/>
+                  // )
+                )}/>
+                <Route path="/home" component={Home} />
+                <Route path="/add-job-description" component={AddJobDescription} />
+                <Route path="/pick-candidates" component={PickCandidates} />
+                <Route path="/review-candidates" component={ReviewCandidates} />
               </main>
             </div>
           </div>
