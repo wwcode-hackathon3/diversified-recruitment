@@ -1,0 +1,902 @@
+[
+  {
+    "name": "Anonymous Lemur",
+    "skills": [
+      {
+        "name": "Trading",
+        "value": 15
+      },
+      {
+        "name": "Systems administration /  analysis/configuration/deployment/design",
+        "value": 93
+      },
+      {
+        "name": "Solutions delivery /strategies",
+        "value": 98
+      },
+      {
+        "name": "Distribution channels",
+        "value": 21
+      },
+      {
+        "name": "Intellectual property rights ( IPR )",
+        "value": 50
+      },
+      {
+        "name": "Framework",
+        "value": 39
+      },
+      {
+        "name": "Privacy policy",
+        "value": 37
+      },
+      {
+        "name": "Market -space",
+        "value": 58
+      },
+      {
+        "name": "Global  HITS",
+        "value": 76
+      },
+      {
+        "name": "E-commerce",
+        "value": 69
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Sheep",
+    "skills": [
+      {
+        "name": "Licensing",
+        "value": 55
+      },
+      {
+        "name": "Business support systems ( BSS)",
+        "value": 48
+      },
+      {
+        "name": "Capital budgets",
+        "value": 93
+      },
+      {
+        "name": "Operations support systems ( OSS )",
+        "value": 53
+      },
+      {
+        "name": "Enterprise systems",
+        "value": 69
+      },
+      {
+        "name": "Information security",
+        "value": 57
+      },
+      {
+        "name": "Fault analysis",
+        "value": 51
+      },
+      {
+        "name": "Data gathering",
+        "value": 34
+      },
+      {
+        "name": "Systems development life cycle ( SDLC )",
+        "value": 43
+      },
+      {
+        "name": "Knowledge management",
+        "value": 95
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Hamster",
+    "skills": [
+      {
+        "name": "SAS/ SPSS",
+        "value": 36
+      },
+      {
+        "name": "Information security",
+        "value": 68
+      },
+      {
+        "name": "Data gathering",
+        "value": 42
+      },
+      {
+        "name": "Mergers  and  Acquisitions",
+        "value": 29
+      },
+      {
+        "name": "Electronic data interchange  (EDI )",
+        "value": 52
+      },
+      {
+        "name": "Competitive intelligence",
+        "value": 80
+      },
+      {
+        "name": "Banner advertisement",
+        "value": 1
+      },
+      {
+        "name": "Distribution channels",
+        "value": 38
+      },
+      {
+        "name": "Unix",
+        "value": 1
+      },
+      {
+        "name": "Web administration",
+        "value": 34
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Iguana",
+    "skills": [
+      {
+        "name": "Service provider",
+        "value": 46
+      },
+      {
+        "name": "Database development",
+        "value": 14
+      },
+      {
+        "name": "Digital marketing (pull /push)",
+        "value": 32
+      },
+      {
+        "name": "Oracle",
+        "value": 72
+      },
+      {
+        "name": "Artificial intelligence",
+        "value": 13
+      },
+      {
+        "name": "Electronic data interchange  (EDI )",
+        "value": 40
+      },
+      {
+        "name": "Information security",
+        "value": 64
+      },
+      {
+        "name": "Root cause analysis",
+        "value": 99
+      },
+      {
+        "name": "Fault analysis",
+        "value": 79
+      },
+      {
+        "name": "Research and  development",
+        "value": 68
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Hyena",
+    "skills": [
+      {
+        "name": "Online advertising",
+        "value": 67
+      },
+      {
+        "name": "Mergers  and  Acquisitions",
+        "value": 68
+      },
+      {
+        "name": "Product launch/testing",
+        "value": 96
+      },
+      {
+        "name": "Distribution channels",
+        "value": 16
+      },
+      {
+        "name": "Data mining /warehousing",
+        "value": 23
+      },
+      {
+        "name": "Information technology",
+        "value": 26
+      },
+      {
+        "name": "Database administra tion /manager",
+        "value": 76
+      },
+      {
+        "name": "Competitive intelligence",
+        "value": 60
+      },
+      {
+        "name": "End -user  support",
+        "value": 55
+      },
+      {
+        "name": "Reach",
+        "value": 85
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Otter",
+    "skills": [
+      {
+        "name": "Service provider",
+        "value": 84
+      },
+      {
+        "name": "Business continuity",
+        "value": 57
+      },
+      {
+        "name": "Business support systems ( BSS)",
+        "value": 6
+      },
+      {
+        "name": "Reach",
+        "value": 78
+      },
+      {
+        "name": "Systems development life cycle ( SDLC )",
+        "value": 42
+      },
+      {
+        "name": "Distribution channels",
+        "value": 82
+      },
+      {
+        "name": "Content",
+        "value": 22
+      },
+      {
+        "name": "E-portal",
+        "value": 68
+      },
+      {
+        "name": "Yield mana",
+        "value": 62
+      },
+      {
+        "name": "Database development",
+        "value": 36
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Jackal",
+    "skills": [
+      {
+        "name": "Yield mana",
+        "value": 60
+      },
+      {
+        "name": "Distribution channels",
+        "value": 49
+      },
+      {
+        "name": "Data controller",
+        "value": 29
+      },
+      {
+        "name": "Shopping cart",
+        "value": 9
+      },
+      {
+        "name": "Application  development/ technology",
+        "value": 17
+      },
+      {
+        "name": "LAN/WAN",
+        "value": 16
+      },
+      {
+        "name": "Knowledge management",
+        "value": 16
+      },
+      {
+        "name": "Management information system  (MIS )",
+        "value": 11
+      },
+      {
+        "name": "Business analytics",
+        "value": 28
+      },
+      {
+        "name": "Oracle",
+        "value": 56
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Dog",
+    "skills": [
+      {
+        "name": "Digital marketing (pull /push)",
+        "value": 96
+      },
+      {
+        "name": "Intellectual property rights ( IPR )",
+        "value": 98
+      },
+      {
+        "name": "Computer science",
+        "value": 89
+      },
+      {
+        "name": "Trading",
+        "value": 52
+      },
+      {
+        "name": "Service provider",
+        "value": 7
+      },
+      {
+        "name": "Web administration",
+        "value": 22
+      },
+      {
+        "name": "Infrastructure development",
+        "value": 69
+      },
+      {
+        "name": "Management information system  (MIS )",
+        "value": 45
+      },
+      {
+        "name": "End -user  support",
+        "value": 42
+      },
+      {
+        "name": "Mergers  and  Acquisitions",
+        "value": 54
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Panda",
+    "skills": [
+      {
+        "name": "Privacy policy",
+        "value": 75
+      },
+      {
+        "name": "Artificial intelligence",
+        "value": 81
+      },
+      {
+        "name": "Online advertising",
+        "value": 53
+      },
+      {
+        "name": "Process re -engineering",
+        "value": 80
+      },
+      {
+        "name": "Capital budgets",
+        "value": 84
+      },
+      {
+        "name": "Trading",
+        "value": 47
+      },
+      {
+        "name": "Banner advertisement",
+        "value": 50
+      },
+      {
+        "name": "Business to consumer  (B2C )",
+        "value": 4
+      },
+      {
+        "name": "Search engine optimization ( SEO )",
+        "value": 5
+      },
+      {
+        "name": "Target market",
+        "value": 57
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Kraken",
+    "skills": [
+      {
+        "name": "Visual Basic",
+        "value": 96
+      },
+      {
+        "name": "Certificate authority",
+        "value": 25
+      },
+      {
+        "name": "Enterprise systems",
+        "value": 50
+      },
+      {
+        "name": "Programming",
+        "value": 57
+      },
+      {
+        "name": "Geographic information system  (GIS )",
+        "value": 41
+      },
+      {
+        "name": "Computer science",
+        "value": 37
+      },
+      {
+        "name": "Unix",
+        "value": 23
+      },
+      {
+        "name": "Mergers  and  Acquisitions",
+        "value": 19
+      },
+      {
+        "name": "Knowledge management",
+        "value": 24
+      },
+      {
+        "name": "Business to business  (B2B )",
+        "value": 94
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Penguin",
+    "skills": [
+      {
+        "name": "Co -branding",
+        "value": 92
+      },
+      {
+        "name": "Web based technology",
+        "value": 74
+      },
+      {
+        "name": "Database administra tion /manager",
+        "value": 45
+      },
+      {
+        "name": "Database integration",
+        "value": 9
+      },
+      {
+        "name": "Information security",
+        "value": 10
+      },
+      {
+        "name": "Product launch/testing",
+        "value": 79
+      },
+      {
+        "name": "Operations support systems ( OSS )",
+        "value": 56
+      },
+      {
+        "name": "Structured Query Language ( SQL )",
+        "value": 40
+      },
+      {
+        "name": "Infrastructure development",
+        "value": 40
+      },
+      {
+        "name": "Search engine optimization ( SEO )",
+        "value": 38
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Elephant",
+    "skills": [
+      {
+        "name": "Program management",
+        "value": 39
+      },
+      {
+        "name": "Vendor management",
+        "value": 18
+      },
+      {
+        "name": "Licensing",
+        "value": 68
+      },
+      {
+        "name": "Target market",
+        "value": 88
+      },
+      {
+        "name": "Shopping cart",
+        "value": 30
+      },
+      {
+        "name": "Application  development/ technology",
+        "value": 81
+      },
+      {
+        "name": "Component development",
+        "value": 98
+      },
+      {
+        "name": "Graphic design",
+        "value": 96
+      },
+      {
+        "name": "Data gathering",
+        "value": 93
+      },
+      {
+        "name": "Systems administration /  analysis/configuration/deployment/design",
+        "value": 69
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Wolf",
+    "skills": [
+      {
+        "name": "Management information system  (MIS )",
+        "value": 70
+      },
+      {
+        "name": "Market -space",
+        "value": 64
+      },
+      {
+        "name": "Artificial intelligence",
+        "value": 66
+      },
+      {
+        "name": "Business continuity",
+        "value": 55
+      },
+      {
+        "name": "Distribution channels",
+        "value": 73
+      },
+      {
+        "name": "Network solutions",
+        "value": 100
+      },
+      {
+        "name": "Business to business  (B2B )",
+        "value": 15
+      },
+      {
+        "name": "Needs assessment",
+        "value": 28
+      },
+      {
+        "name": "E-commerce",
+        "value": 23
+      },
+      {
+        "name": "Consultant",
+        "value": 97
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Bat",
+    "skills": [
+      {
+        "name": "Electronic marketing",
+        "value": 27
+      },
+      {
+        "name": "Systems administration /  analysis/configuration/deployment/design",
+        "value": 92
+      },
+      {
+        "name": "Systems development life cycle ( SDLC )",
+        "value": 18
+      },
+      {
+        "name": "Technical support",
+        "value": 41
+      },
+      {
+        "name": "Database integration",
+        "value": 39
+      },
+      {
+        "name": "Delivery systems",
+        "value": 74
+      },
+      {
+        "name": "Operations support systems ( OSS )",
+        "value": 30
+      },
+      {
+        "name": "Vortals (vertical industry portals)",
+        "value": 54
+      },
+      {
+        "name": "Channel  behavior  / conflicts/marketing/  outcomes /profitability/promotion/ satisfaction",
+        "value": 28
+      },
+      {
+        "name": "Quality assurance",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Dingo",
+    "skills": [
+      {
+        "name": "Voice over Internet Protocol ( VoIP )",
+        "value": 81
+      },
+      {
+        "name": "Electronic data interchange  (EDI )",
+        "value": 66
+      },
+      {
+        "name": "Geographic information system  (GIS )",
+        "value": 94
+      },
+      {
+        "name": "Artificial intelligence",
+        "value": 73
+      },
+      {
+        "name": "Web administration",
+        "value": 39
+      },
+      {
+        "name": "Software engineering",
+        "value": 67
+      },
+      {
+        "name": "Business to business  (B2B )",
+        "value": 89
+      },
+      {
+        "name": "Delivery systems",
+        "value": 12
+      },
+      {
+        "name": "Intellectual property rights ( IPR )",
+        "value": 57
+      },
+      {
+        "name": "Architecture",
+        "value": 42
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Hedgehog",
+    "skills": [
+      {
+        "name": "Structured Query Language ( SQL )",
+        "value": 13
+      },
+      {
+        "name": "Encryption",
+        "value": 68
+      },
+      {
+        "name": "Channel  behavior  / conflicts/marketing/  outcomes /profitability/promotion/ satisfaction",
+        "value": 75
+      },
+      {
+        "name": "Graphic design",
+        "value": 62
+      },
+      {
+        "name": "E-portal",
+        "value": 41
+      },
+      {
+        "name": "Java",
+        "value": 75
+      },
+      {
+        "name": "Software configuration",
+        "value": 44
+      },
+      {
+        "name": "Target market",
+        "value": 18
+      },
+      {
+        "name": "Technic al documentation",
+        "value": 67
+      },
+      {
+        "name": "Root cause analysis",
+        "value": 34
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Wolf",
+    "skills": [
+      {
+        "name": "Systems administration /  analysis/configuration/deployment/design",
+        "value": 94
+      },
+      {
+        "name": "Structured Query Language ( SQL )",
+        "value": 32
+      },
+      {
+        "name": "Reach",
+        "value": 71
+      },
+      {
+        "name": "Systems development life cycle ( SDLC )",
+        "value": 65
+      },
+      {
+        "name": "Technical support",
+        "value": 86
+      },
+      {
+        "name": "Business transformation",
+        "value": 50
+      },
+      {
+        "name": "Electronic data interchange  (EDI )",
+        "value": 58
+      },
+      {
+        "name": "Computer science",
+        "value": 13
+      },
+      {
+        "name": "Network solutions",
+        "value": 65
+      },
+      {
+        "name": "Unix",
+        "value": 30
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Lemur",
+    "skills": [
+      {
+        "name": "Architecture",
+        "value": 60
+      },
+      {
+        "name": "Software engineering",
+        "value": 82
+      },
+      {
+        "name": "Java",
+        "value": 61
+      },
+      {
+        "name": "Competitive intelligence",
+        "value": 82
+      },
+      {
+        "name": "Fault analysis",
+        "value": 18
+      },
+      {
+        "name": "Data mining /warehousing",
+        "value": 52
+      },
+      {
+        "name": "Network administration /management",
+        "value": 78
+      },
+      {
+        "name": "Visual Basic",
+        "value": 49
+      },
+      {
+        "name": "Product launch/testing",
+        "value": 3
+      },
+      {
+        "name": "Research and  development",
+        "value": 57
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Hamster",
+    "skills": [
+      {
+        "name": "Business to consumer  (B2C )",
+        "value": 72
+      },
+      {
+        "name": "Structured Query Language ( SQL )",
+        "value": 32
+      },
+      {
+        "name": "Framework",
+        "value": 77
+      },
+      {
+        "name": "Knowledge management",
+        "value": 76
+      },
+      {
+        "name": "Geographic information system  (GIS )",
+        "value": 75
+      },
+      {
+        "name": "Voice over Internet Protocol ( VoIP )",
+        "value": 9
+      },
+      {
+        "name": "Database development",
+        "value": 30
+      },
+      {
+        "name": "SAS/ SPSS",
+        "value": 9
+      },
+      {
+        "name": "Technic al documentation",
+        "value": 74
+      },
+      {
+        "name": "Product launch/testing",
+        "value": 88
+      }
+    ]
+  },
+  {
+    "name": "Anonymous Chameleon",
+    "skills": [
+      {
+        "name": "Mergers  and  Acquisitions",
+        "value": 14
+      },
+      {
+        "name": "Needs assessment",
+        "value": 29
+      },
+      {
+        "name": "Geographic information system  (GIS )",
+        "value": 43
+      },
+      {
+        "name": "Artificial intelligence",
+        "value": 6
+      },
+      {
+        "name": "Java",
+        "value": 87
+      },
+      {
+        "name": "Database development",
+        "value": 32
+      },
+      {
+        "name": "Technical support",
+        "value": 52
+      },
+      {
+        "name": "Software engineering",
+        "value": 65
+      },
+      {
+        "name": "Web administration",
+        "value": 72
+      },
+      {
+        "name": "Shopping cart",
+        "value": 4
+      }
+    ]
+  }
+]
