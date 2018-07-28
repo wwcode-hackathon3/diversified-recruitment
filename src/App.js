@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {BrowserRouter as Router, Route, Link, NavLink} from "react-router-dom";
 import './App.css';
 import AddJobDescription from './views/AddJobDescription'
 import PickCandidates from './views/PickCandidates'
@@ -24,19 +24,19 @@ class App extends Component {
                 <div className="sidebar-sticky">
                   <ul className="nav flex-column">
                     <li className="nav-item">
-                      <Link to="/add-job-description" className="nav-link">
+                      <NavLink to="/add-job-description" className="nav-link" activeClassName="active">
                         Add job description <span className="sr-only">(current)</span>
-                      </Link>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <Link to="/pick-candidates" className="nav-link">
+                      <NavLink to="/pick-candidates" className="nav-link" activeClassName="active">
                         Pick candidates
-                      </Link>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <Link to="/review-candidates" className="nav-link">
+                      <NavLink to="/review-candidates" className="nav-link" activeClassName="active">
                         Review candidates
-                      </Link>
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
