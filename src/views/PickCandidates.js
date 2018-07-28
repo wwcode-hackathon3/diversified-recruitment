@@ -37,7 +37,11 @@ class AddJobDescription extends React.Component {
     if (this.state.index < candidates.length) {
       let word_cloud_data = candidates[this.state.index].skills;
       name = <p>{candidates[this.state.index].name}</p>;
-      word_cloud = <WordCloud data={word_cloud_data} fontSizeMapper={fontSizeMapper} />;
+      word_cloud = <WordCloud 
+                      data={word_cloud_data} 
+                      fontSizeMapper={fontSizeMapper} 
+                      height={390}
+                    />;
       like_button = <button onClick={this.like} className="btn btn-success">I like you</button>;
       dislike_button = <button onClick={this.dislike} className="btn btn-danger"> I no lik u </button>
     } else {
@@ -47,7 +51,7 @@ class AddJobDescription extends React.Component {
       dislike_button = <br />;
  }
 
-    return <div>
+    return <div className="pick-candidates">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/">Home</a></li>
@@ -58,7 +62,9 @@ class AddJobDescription extends React.Component {
         <h1 className="h2">Pick candidates</h1>
       </div>
       {name}
-      {word_cloud}
+      <div className="svg-container">
+        {word_cloud}
+      </div>
       <div className="text-center">
         {like_button}
         {dislike_button}
