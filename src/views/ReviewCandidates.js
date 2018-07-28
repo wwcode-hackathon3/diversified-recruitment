@@ -53,7 +53,7 @@ export default class ReviewCandidates extends React.Component {
             <p>
               Review and contact the candidates you're interested in:
               <Link to="#" className="btn btn-primary btn-sm float-right">
-                Add job description
+                Contact all candidates
               </Link>
             </p>
             <div className="list-group">
