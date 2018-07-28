@@ -43,7 +43,7 @@ for _ in range(20):
     skills = random.sample(keywords, 10)
     candidates.append({
         "name": "Anonymous " +name.capitalize(),
-        "skills": [{"name": s, "value": random.randint(1, 101)} for s in skills]
+        "skills": [{"text": s, "value": random.randint(10, 1000)} for s in skills]
     })
 
 print(candidates);
