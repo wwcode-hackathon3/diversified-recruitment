@@ -18,7 +18,7 @@ export default class ReviewCandidates extends React.Component {
         this.state.accepted_candidates = [];
       }
       this.listings = this.state.accepted_candidates.map((candidate) =>
-        <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
+        <a href="#" key={candidate.name} className="list-group-item list-group-item-action flex-column align-items-start">
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">{candidate.name}</h5>
             <div>
