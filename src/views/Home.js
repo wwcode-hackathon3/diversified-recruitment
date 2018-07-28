@@ -4,7 +4,7 @@ const username = 'Boss';
 
 export default class Home extends React.Component {
   render() {
-    return <div>
+    return <div class="container-fluid">
       <h1 className="h2">Welcome, {username}</h1>
       <p>View your active job listings:</p>
       <div className="list-group">
