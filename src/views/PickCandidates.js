@@ -21,7 +21,8 @@ class AddJobDescription extends React.Component {
       // this.setState({ hits: JSON.parse(cachedHits) });
     } else {
       this.state.candidates = JSONData.slice(0, 20);
-      localStorage.setItem("n",  JSON.stringify(this.state.candidates))
+      localStorage.setItem("not_processed",  JSON.stringify(this.state.candidates));
+      localStorage.setItem("accept",  "[]");
     }
   }
 
@@ -29,13 +30,17 @@ class AddJobDescription extends React.Component {
     // console.log(this.state.index);
     this.state.candidates.shift();
     this.setState({candidates: this.state.candidates});
-    localStorage.setItem("n",  JSON.stringify(this.state.candidates))
+    localStorage.setItem("not_processed",  JSON.stringify(this.state.candidates))
 
   }
   dislike() {
     this.moveToNext();
   }
   like () {
+    var current_accept = JSON.parse(localStorage.getItem("accept"));
+    console.log(current_accept);
+    current_accept.push(this.state.candidates[0]);
+    localStorage.setItem("accept", JSON.stringify(current_accept));
     this.moveToNext();
   }
 
