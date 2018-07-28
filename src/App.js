@@ -20,44 +20,19 @@ class App extends Component {
             </ul>
           </nav>
           <div className="container-fluid">
-            <div className="row">
-              <nav className="col-md-2 d-none d-md-block bg-light sidebar">
-                <div className="sidebar-sticky">
-                  <ul className="nav flex-column">
-                    <li className="nav-item">
-                      <NavLink to="/home" className="nav-link" activeClassName="active">
-                        Home
-                      </NavLink>
-                    </li>
-                    <li className="nav-item">
-                      <NavLink to="/pick-candidates" className="nav-link">
-                        Pick candidates
-                      </NavLink>
-                    </li>
-                    <li className="nav-item">
-                      <NavLink to="/review-candidates" className="nav-link">
-                        Review candidates
-                      </NavLink>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-
-              <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-4">
-
-                <Route exact path="/" render={() => (
-                  // loggedIn ? (
-                    <Redirect to="/home"/>
-                  // ) : (
-                  //   <Redirect to="/login"/>
-                  // )
-                )}/>
-                <Route path="/home" component={Home} />
-                <Route path="/add-job-description" component={AddJobDescription} />
-                <Route path="/pick-candidates" component={PickCandidates} />
-                <Route path="/review-candidates" component={ReviewCandidates} />
-              </main>
-            </div>
+             <main role="main" className="ml-sm-auto px-4">
+              <Route exact path="/" render={() => (
+                // loggedIn ? (
+                  <Redirect to="/home"/>
+                // ) : (
+                //   <Redirect to="/login"/>
+                // )
+              )}/>
+              <Route path="/home" component={Home} />
+              <Route path="/add-job-description" component={AddJobDescription} />
+              <Route path="/pick-candidates" component={PickCandidates} />
+              <Route path="/review-candidates" component={ReviewCandidates} />
+            </main>
           </div>
         </div>
       </Router>
