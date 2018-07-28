@@ -54,7 +54,11 @@ class PickCandidates extends React.Component {
     if (this.state.candidates.length>0) {
       let word_cloud_data = this.state.candidates[0].skills;
       name = <p>{this.state.candidates[0].name}</p>;
-      word_cloud = <WordCloud data={word_cloud_data} fontSizeMapper={fontSizeMapper} />;
+      word_cloud = <WordCloud 
+                      data={word_cloud_data} 
+                      fontSizeMapper={fontSizeMapper} 
+                      height={390}
+                    />;
       like_button = <button onClick={this.like} className="btn btn-success">I like you</button>;
       dislike_button = <button onClick={this.dislike} className="btn btn-danger"> I no lik u </button>
     } else {
@@ -64,7 +68,7 @@ class PickCandidates extends React.Component {
       dislike_button = <br />;
  }
 
-    return <div>
+    return <div className="pick-candidates">
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb">
           <li className="breadcrumb-item"><a href="/">Home</a></li>
@@ -75,7 +79,9 @@ class PickCandidates extends React.Component {
         <h1 className="h2">Pick candidates</h1>
       </div>
       {name}
-      {word_cloud}
+      <div className="svg-container">
+        {word_cloud}
+      </div>
       <div className="text-center">
         {like_button}
         {dislike_button}

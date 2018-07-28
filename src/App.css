@@ -151,3 +151,8 @@ body {
   padding-bottom: 0;
   font-size: 0.85em;
 }
+
+.pick-candidates .svg-container svg {
+  display: block;
+  margin: 0 auto;
+}
