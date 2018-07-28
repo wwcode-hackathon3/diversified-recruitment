@@ -49,8 +49,10 @@ class AddJobDescription extends React.Component {
 
   render() {
     return <div>
-      <h1>Pick candidates</h1>
-      {this.state.index < resumes.length ?
+      <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 className="h2">Pick candidates</h1>
+      </div>
+    {this.state.index < resumes.length ?
       <WordCloud
         data={resumes[this.state.index]}
         fontSizeMapper={fontSizeMapper}
@@ -62,7 +64,6 @@ class AddJobDescription extends React.Component {
       <button onClick={this.like}>
         I like you
       </button>
-
     </div>
   }
 
