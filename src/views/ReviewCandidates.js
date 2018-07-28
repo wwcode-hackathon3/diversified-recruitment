@@ -2,6 +2,8 @@ import React from "react";
 import Switch from "react-switch";
 import {Link} from "react-router-dom";
 
+
+
 export default class ReviewCandidates extends React.Component {
 
 
@@ -9,30 +11,34 @@ export default class ReviewCandidates extends React.Component {
         super(props);
         this.state = { checked: false };
         this.handleChange = this.handleChange.bind(this);
-      const cachedHits = localStorage.getItem("accept");
+        const cachedHits = localStorage.getItem("accept");
+        this.email = this.email.bind(this);
       if (cachedHits) {
         this.state.accepted_candidates = JSON.parse(cachedHits);
         console.log(this.state.accepted_candidates);
         // this.setState({ hits: JSON.parse(cachedHits) });
       } else {
         this.state.accepted_candidates = [];
-      }
+        }      
+
       this.listings = this.state.accepted_candidates.map((candidate) =>
         <a href="#" key={candidate.name} className="list-group-item list-group-item-action flex-column align-items-start">
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">{candidate.name}</h5>
             <div>
-              <span className="badge badge-primary badge-pill">
-                  <Switch
-                    onChange={this.handleChange}
-                    checked={this.state.checked}
-                    id="normal-switch"
-                  />
+              <span>
+                   <button onClick={this.email(candidate.name)} className="btn btn-success" id={candidate.name}>E-mail</button>
               </span>
             </div>
           </div>
         </a>
-      );
+        );
+
+
+    }
+
+    email(name) {
+       
     }
 
     handleChange(checked) {
