@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 
 export default class ReviewCandidates extends React.Component {
 
+
     constructor(props) {
         super(props);
         this.state = { checked: false };
@@ -16,6 +17,22 @@ export default class ReviewCandidates extends React.Component {
       } else {
         this.state.accepted_candidates = [];
       }
+      this.listings = this.state.accepted_candidates.map((candidate) =>
+        <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
+          <div className="d-flex w-100 justify-content-between">
+            <h5 className="mb-1">{candidate.name}</h5>
+            <div>
+              <span className="badge badge-primary badge-pill">
+                  <Switch
+                    onChange={this.handleChange}
+                    checked={this.state.checked}
+                    id="normal-switch"
+                  />
+              </span>
+            </div>
+          </div>
+        </a>
+      );
     }
 
     handleChange(checked) {
@@ -40,35 +57,7 @@ export default class ReviewCandidates extends React.Component {
               </Link>
             </p>
             <div className="list-group">
-                <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
-                    <div className="d-flex w-100 justify-content-between">
-                        <h5 className="mb-1">Tomato</h5>
-                        <div>
-                            <span className="badge badge-primary badge-pill">
-                                <Switch
-                                    onChange={this.handleChange}
-                                    checked={this.state.checked}
-                                    id="normal-switch"
-                                />
-                            </span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
-                    <div className="d-flex w-100 justify-content-between">
-                        <h5 className="mb-1">VeryIntresting</h5>
-                        <div>
-                            <span className="badge badge-primary badge-pill">
-                                <Switch
-                                    onChange={this.handleChange}
-                                    checked={this.state.checked}
-                                    id="normal-switch_2"
-                                />
-                            </span>
-                        </div>
-                    </div>
-
-                </a>
+              {this.listings}
             </div>
         </div>
 
