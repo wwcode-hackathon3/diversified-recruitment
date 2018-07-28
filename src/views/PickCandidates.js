@@ -1,6 +1,6 @@
 import React from "react";
 import WordCloud from 'react-d3-cloud';
-import candidates from '../candidates.json';
+import JSONData from '../candidates.json';
 
 
 const fontSizeMapper = word => Math.log2(word.value) * 5;
@@ -15,6 +15,7 @@ class AddJobDescription extends React.Component {
     this.dislike = this.dislike.bind(this);
     this.like = this.like.bind(this);
     this.moveToNext = this.moveToNext.bind(this);
+    this.candidates = JSONData.slice(0, 20)
   }
 
   moveToNext() {
@@ -34,9 +35,9 @@ class AddJobDescription extends React.Component {
     let like_button;
     let dislike_button;
     let name;
-    if (this.state.index < candidates.length) {
-      let word_cloud_data = candidates[this.state.index].skills;
-      name = <p>{candidates[this.state.index].name}</p>;
+    if (this.state.index < this.candidates.length) {
+      let word_cloud_data = this.candidates[this.state.index].skills;
+      name = <p>{this.candidates[this.state.index].name}</p>;
       word_cloud = <WordCloud data={word_cloud_data} fontSizeMapper={fontSizeMapper} />;
       like_button = <button onClick={this.like} className="btn btn-success">I like you</button>;
       dislike_button = <button onClick={this.dislike} className="btn btn-danger"> I no lik u </button>
