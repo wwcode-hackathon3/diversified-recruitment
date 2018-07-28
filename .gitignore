@@ -83,3 +83,4 @@ yarn-error.log*
 
 # IntelliJ
 .idea/
+src/views/ReviewCandidates.js
