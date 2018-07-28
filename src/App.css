@@ -141,3 +141,13 @@ body {
   padding-right: 0;
   margin-top: 0.5em;
 }
+
+.home .right-align {
+  float: right;
+}
+
+.home .list-group-item .btn {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 0.85em;
+}
