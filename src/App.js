@@ -1,24 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
-
-const AddJobDescription = () => (
-  <div>
-    <h1>Add job description</h1>
-  </div>
-);
-
-const PickCandidates = () => (
-  <div>
-    <h1>Pick candidates</h1>
-  </div>
-);
-
-const ReviewCandidates = () => (
-  <div>
-    <h1>Review candidates</h1>
-  </div>
-);
+import AddJobDescription from './views/AddJobDescription'
+import PickCandidates from './views/PickCandidates'
+import ReviewCandidates from './views/ReviewCandidates'
 
 class App extends Component {
   render() {
@@ -66,10 +51,6 @@ class App extends Component {
                   <Route path="/review-candidates" component={ReviewCandidates} />
                 </div>
               </main>
-
-
-
-
             </div>
           </div>
         </div>
