@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, NavLink, Redirect} from "react-router-dom";
+import {BrowserRouter as Router, Route, Redirect} from "react-router-dom";
 import './App.css';
 import Home from './views/Home'
 import AddJobDescription from './views/AddJobDescription'
