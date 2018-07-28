@@ -3,24 +3,34 @@ import WordCloud from 'react-d3-cloud';
 import JSONData from '../candidates.json';
 
 
-const fontSizeMapper = word => Math.log2(word.value) * 5;
 
+const fontSizeMapper = word => Math.log2(word.value) * 5;
 
 
 class AddJobDescription extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {index: 0};
+    this.state = {candidates: []};
     // This binding is necessary to make `this` work in the callback
     this.dislike = this.dislike.bind(this);
     this.like = this.like.bind(this);
     this.moveToNext = this.moveToNext.bind(this);
-    this.candidates = JSONData.slice(0, 20)
+    const cachedHits = localStorage.getItem("n");
+    if (cachedHits) {
+      this.state.candidates = JSON.parse(cachedHits);
+      // this.setState({ hits: JSON.parse(cachedHits) });
+    } else {
+      this.state.candidates = JSONData.slice(0, 20);
+      localStorage.setItem("n",  JSON.stringify(this.state.candidates))
+    }
   }
 
   moveToNext() {
-    console.log(this.state.index);
-    this.setState({index: this.state.index+1});
+    // console.log(this.state.index);
+    this.state.candidates.shift();
+    this.setState({candidates: this.state.candidates});
+    localStorage.setItem("n",  JSON.stringify(this.state.candidates))
+
   }
   dislike() {
     this.moveToNext();
@@ -31,13 +41,14 @@ class AddJobDescription extends React.Component {
 
 
   render() {
+    console.log(localStorage.getItem("n"));
     let word_cloud;
     let like_button;
     let dislike_button;
     let name;
-    if (this.state.index < this.candidates.length) {
-      let word_cloud_data = this.candidates[this.state.index].skills;
-      name = <p>{this.candidates[this.state.index].name}</p>;
+    if (this.state.candidates.length>0) {
+      let word_cloud_data = this.state.candidates[0].skills;
+      name = <p>{this.state.candidates[0].name}</p>;
       word_cloud = <WordCloud data={word_cloud_data} fontSizeMapper={fontSizeMapper} />;
       like_button = <button onClick={this.like} className="btn btn-success">I like you</button>;
       dislike_button = <button onClick={this.dislike} className="btn btn-danger"> I no lik u </button>
