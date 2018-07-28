@@ -38,8 +38,9 @@ keywords = ["Access platform", "Ad creative/impression/inventory/rotation",
             "Web based technology", "Yield mana"]
 
 candidates = []
-for _ in range(20):
-    name = random.choice(names)
+name_list = random.sample(names, 20)
+for i in range(20):
+    name = name_list[i]
     skills = random.sample(keywords, 10)
     candidates.append({
         "name": "Anonymous " +name.capitalize(),
