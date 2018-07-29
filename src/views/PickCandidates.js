@@ -58,6 +58,7 @@ class PickCandidates extends React.Component {
                       data={word_cloud_data} 
                       fontSizeMapper={fontSizeMapper} 
                       height={390}
+                      font={"sans-serif"}
                     />;
       like_button = <button onClick={this.like} className="btn btn-success">I like you</button>;
       dislike_button = <button onClick={this.dislike} className="btn btn-danger"> I no lik u </button>
