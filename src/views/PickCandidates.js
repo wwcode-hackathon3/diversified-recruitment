@@ -53,7 +53,7 @@ class PickCandidates extends React.Component {
     let name;
     if (this.state.candidates.length>0) {
       let word_cloud_data = this.state.candidates[0].skills;
-      name = <p>{this.state.candidates[0].name}</p>;
+      name = "Candidate: " + this.state.candidates[0].name;
       word_cloud = <WordCloud 
                       data={word_cloud_data} 
                       fontSizeMapper={fontSizeMapper} 
@@ -63,7 +63,7 @@ class PickCandidates extends React.Component {
       like_button = <button onClick={this.like} className="btn btn-success">I like you</button>;
       dislike_button = <button onClick={this.dislike} className="btn btn-danger"> I no lik u </button>
     } else {
-      name = <br />;
+      name = "You're done!";
       word_cloud = <p>The End</p>;
       like_button = <br />;
       dislike_button = <br />;
@@ -77,9 +77,9 @@ class PickCandidates extends React.Component {
         </ol>
       </nav>
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 className="h2">Pick candidates</h1>
+        <h1 className="h2">{name}</h1>
       </div>
-      {name}
+      {/*{name}*/}
       <div className="svg-container">
         {word_cloud}
       </div>
