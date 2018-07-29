@@ -5,14 +5,16 @@ import Home from './views/Home'
 import AddJobDescription from './views/AddJobDescription'
 import PickCandidates from './views/PickCandidates'
 import ReviewCandidates from './views/ReviewCandidates'
+import logo from './Image/logo.PNG'
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="App">
-          <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-            <a className="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Recruitment Portal</a>
+          <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow rainbow">
+          <img src={logo} className="logo"/>
+            {/* <a className="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Recruitment Portal</a> */}
             <ul className="navbar-nav px-3">
               <li className="nav-item text-nowrap">
                 <a className="nav-link" href="#">Sign out</a>
